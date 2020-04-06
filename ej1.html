@@ -1,17 +1,14 @@
 <script>
     var diccionario = new Map();
     var nombre = new Array("P","a","c","o");
+    var apellido = new Array("R","i","v","a","s");
+    var fullName = new Array();
 
-    for(var i = 0; i < nombre.length; i++)
-    {
-        if(!diccionario.has(nombre[i])) {
-            diccionario.set(nombre[i],1);
-        } else {
-            diccionario[nombre[i]] = diccionario.get(nombre[i]) + 1;
-        }
-    }
+    fullName.push(nombre);
+    fullName.push(" ");
+    fullName.push(apellido);
 
-    console.log(diccionario);
+    console.log(fullName);
 
 
 </script>
